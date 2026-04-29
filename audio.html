@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompendium: Audio i Mapy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dźwięk i Lokalizacja</h1>
+        <nav>
+            <a href="index.html">Strona Główna</a>
+            <a href="audio.html">Audio i Mapy</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-box">
+            <h2>Znacznik &lt;audio&gt; - Charakterystyka</h2>
+            <p>Pozwala na odtwarzanie plików dźwiękowych (MP3, WAV, OGG) w przeglądarce.</p>
+            <audio controls>
+                <source src="Classicals.de - Chopin - Allegro de concert, Op. 46.mp3" type="audio/mpeg">
+                Twoja przeglądarka nie obsługuje elementu audio.
+            </audio>
+            <div class="info">
+                <strong>Ważne parametry:</strong>
+                <ul>
+                    <li><code>source</code> – definiuje ścieżkę do pliku i jego typ MIME.</li>
+                    <li><code>preload</code> – informuje przeglądarkę, czy ma pobierać plik od razu (auto, metadata, none).</li>
+                    <li><code>controlsList</code> – pozwala ukryć niektóre przyciski (np. pobieranie).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-box">
+            <h2>Znacznik &lt;iframe&gt; i Mapy</h2>
+            <p>Znacznik <code>&lt;iframe&gt;</code> (inline frame) służy do osadzania innej strony lub treści zewnętrznej (jak Mapy Google) wewnątrz bieżącego dokumentu.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41022.288017800616!2d19.84783754990107!3d50.01336068213623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b7a5a0e622b%3A0xd5d25c4b488e7d88!2sTechnikum%20%C5%81%C4%85czno%C5%9Bci%20nr%2014%20w%20Krakowie!5e0!3m2!1spl!2spl!4v1777444412930!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="info">
+                <strong>Dlaczego warto?</strong>
+                <ul>
+                    <li>Interaktywność – użytkownik może przesuwać i powiększać mapę.</li>
+                    <li>Łatwość wdrożenia – gotowy kod generowany przez Google Maps.</li>
+                    <li><code>loading="lazy"</code> – optymalizacja; mapa ładuje się dopiero, gdy użytkownik do niej przewinie.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

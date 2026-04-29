@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompendium: Gradienty i Wideo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gradienty i Wideo</h1>
+        <nav>
+            <a href="index.html">Strona Główna</a>
+            <a href="audio.html">Audio i Mapy</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card linear">
+            <h2>Gradient Liniowy (linear-gradient)</h2>
+            <p>Funkcja <code>linear-gradient()</code> tworzy przejście kolorów wzdłuż linii prostej. Możemy określić kierunek (np. <code>to right</code>, <code>45deg</code>) oraz punkty zatrzymania koloru (color-stops).</p>
+            <ul>
+                <li><strong>Składnia:</strong> background: linear-gradient(kierunek, kolor1, kolor2);</li>
+                <li><strong>Zastosowanie:</strong> Tła przycisków, nagłówki, nowoczesne karty.</li>
+            </ul>
+        </section>
+
+        <section class="card radial">
+            <h2>Gradient Promienisty (radial-gradient)</h2>
+            <p>Funkcja <code>radial-gradient()</code> rozchodzi się od punktu środkowego (środka okręgu lub elipsy). Pozwala na tworzenie efektów głębi i oświetlenia.</p>
+            <ul>
+                <li><strong>Składnia:</strong> background: radial-gradient(kształt, kolor1, kolor2);</li>
+                <li><strong>Kształty:</strong> <code>circle</code> (koło) lub <code>ellipse</code> (elipsa).</li>
+            </ul>
+        </section>
+
+        <section class="content-box">
+            <h2>Znacznik &lt;video&gt; - Szczegóły</h2>
+            <p>Służy do osadzania plików wideo bezpośrednio na stronie bez zewnętrznych wtyczek.</p>
+            <video controls width="100%" poster="cute-curious-gray-and-white-kitten-in-a-long-shot-photo.jpg">
+                <source src="YTDown_YouTube_Rick-Astley-Never-Gonna-Give-You-Up-Offi_Media_dQw4w9WgXcQ_001_1080p.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje elementu wideo.
+            </video>
+            <div class="info">
+                <strong>Kluczowe atrybuty:</strong>
+                <ul>
+                    <li><code>controls</code> – dodaje pasek odtwarzania, głośność i pauzę.</li>
+                    <li><code>autoplay</code> – wideo startuje samo (wymaga często wyciszenia <code>muted</code>).</li>
+                    <li><code>loop</code> – zapętla film.</li>
+                    <li><code>poster</code> – obrazek wyświetlany przed uruchomieniem filmu.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
